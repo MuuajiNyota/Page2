@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="https://img.freepik.com/photos-gratuite/campagne-rechauffement-climatique-planete-terre-surchauffe-medias-mixtes_53876-104835.jpg?semt=ais_se_enriched&w=740&q=80" />
+  <title>Astuces pour bien s’hydrater</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+
+<style>
+    :root {
+      --bg: #060617;
+      --card: #0c1120;
+      --accent: #38bdf8;
+      --text-main: #e8b7eb;
+      --text-soft: #9ca3af;
+      --radius: 16px;
+    }	
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      min-height: 800px;
+      font-family: "Poppins", "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
+      background: radial-gradient(circle at 75%, #1e293b 0, transparent 55%),
+                  radial-gradient(circle at 100%, #22d3ee 0, transparent 55%),
+                  var(--bg);
+      color: var(--text-main);
+      line-height: 26px;
+      padding: 24px;
+      display: flex;
+      justify-content: center;
+    }
+
+    main {
+      width: 100%;
+      max-width: 1000px;
+      display: grid;
+      gap: 24px;
+      background: var(--card);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    header {
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 36px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    header p {
+      color: var(--text-soft);
+      font-size: 15px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+
+    .layout {
+      display: grid;
+      gap: 24px;
+    }
+
+    @media (min-width: 700px) {
+      .layout {
+        grid-template-columns: 220px minmax(0, 1fr);
+        align-items: start;
+      }
+    }
+
+    .panel {
+      position: sticky;
+      top: 24px;
+      padding: 16px;
+      border-radius: var(--radius);
+      background: rgba(15, 23, 42, 0.95);
+      border: 1px solid rgba(148, 163, 184, 0.4);
+      font-size: 14px;
+    }
+
+    .panel h2 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--text-soft);
+      margin-bottom: 11px;
+    }
+
+    .panel a {
+      display: block;
+      text-decoration: none;
+      color: white;
+      padding: 16px;
+      border-radius: 20px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      margin-bottom: 8px;
+      background: rgba(15, 23, 42, 0.9);
+      transition: background 0.3s, transform 0.3s, border-color 0.3s;
+    }
+
+    .panel a:hover {
+      background: transparent;
+      border-color: var(--accent);
+      transform: translateX(5px);
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 14px;
+      border-radius: 999px;
+      border: 3px solid lightgrey;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 14px;
+      color: var(--accent);
+      justify-content: center;
+    }
+
+    .badge i {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      display: inline-block;
+    }
+
+    article h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: var(--accent);
+    }
+
+    article h3 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+	
+	article h4 {
+      font-size: 16px;
+      margin-top: 20px;
+      margin-bottom: 6px;
+      color: var(--accent);
+    }
+
+    article p {
+      font-size: 15px;
+      color: var(--text-soft);
+      margin-bottom: 16px;
+    }
+
+    .conseils {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .conseil {
+      font-size: 14px;
+      padding: 10px 14px;
+      border-radius: 12px;
+      border: 3px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.95);
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 16px;
+      color: var(--accent);
+    }
+</style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Astuces pour bien s’hydrater</h1>
+      <p>Quelques conseils simples pour boire suffisamment et préserver votre santé tout au long de la journée.</p>
+    </header>
+
+    <div class="layout">
+      <aside class="panel" aria-label="Ressources utiles">
+        <h2>Ressources</h2>
+        <nav>
+          <ul>
+            <li><a href="https://muuajinyota.github.io/Page1/" title="Lien retour vers la page n°1">🌍 <i>Retour Page 1</i> --- Boire de l'eau</a></li>
+            <li><a href="C:\Users\gryse\OneDrive\Dokumente\Cours\Hannequin\TP-HTML\Page 3 du site\Site Page3.html" title="Lien vers la page n°3">&#128167; <i>PAGE 3 Stats</i> --- Statistiques sur l'eau</a></li>
+            <li><a href="https://fr.wikipedia.org/wiki/Eau" target="_blank" rel="noopener" title="Lien vers la page Wikipédia">🌐 Wikipédia - Eau <span>Comprendre la ressource essentielle</span></a></li>
+          </ul>
+        </nav>
+      </aside>
+      <div class="Terre">
+        <img src="dessin-bouteille-eau-plastique_29937-11162-removebg-preview.png" title="Image de bouteille d'eau" alt="Bouteille d'eau" />
+        <article>
+          <div class="badge"><i></i> Hydratation & Santé</div>
+
+          <h2>Définir ses besoins quotidiens</h2>
+          <p>
+            Quelle quantité d’eau devez-vous boire chaque jour ? Il existe des recommandations qui fixent les besoins quotidiens à 1,5L/jour soit 7 à 8 verres d’eau. En réalité, le besoin en eau dépend de nombreux facteurs dont le climat, votre niveau d’activité physique ou encore votre état de santé.
+
+            Pour chacun des facteurs, il faut ajouter 2 à 3 verres d’eau aux recommandations journalières : par temps chaud, en cas de maladie ou bien simplement si vous pratiquez une activité physique. Le besoin quotidien en eau peut donc grimper à 2,5L d’eau par jour soit environ 12 verres selon la saison.
+
+            Et vous, quel est votre besoin journalier ? 8, 10, 12 verres d’eau ?
+          </p>
+
+          <h3>Boire avant d’avoir soif</h3>
+          <p>
+            La sensation de soif est en réalité un signal d’alarme du corps humain : si vous avez soif, vous êtes déjà déshydraté ! Il est donc important de boire régulièrement de petites quantités d’eau.
+
+            Pour cela, établissez un rythme : buvez par exemple un verre toutes les 2 heures tout au long de la journée, et 1 ou 2 verres au cours de chaque repas.
+          </p>
+
+          <h3>Toujours avoir de l’eau à portée de main</h3>
+          <p>
+            Au travail, nous sommes occupés et nous oublions d’aller boire. Faites venir l’eau jusqu’à vous : chaque matin, allez à la fontaine à eau, servez-vous un gobelet d’eau, posez-le sur votre bureau ou à portée de main. Vous pouvez aussi opter pour une bouteille réutilisable Chateaud’eau que vous remplirez régulièrement. Ces astuces vous permettent de boire bien plus que d’habitude.
+          </p>
+
+          <h4>Toujours avoir de l’eau à portée de main</h4>
+          <p>
+            Lassé de l’eau ? Variez les plaisirs et dégustez thés et cafés. Vous bénéficierez ainsi du pouvoir hydratant de l’eau et de l’effet stimulant des boissons chaudes.
+            Quoi qu’il en soit, l’été arrive, alors au bureau, sur un chantier ou sur la route, il faut boire plus pour rester performants et concentrés, tout au long de la journée.
+          </p>
+
+          <div class="conseils">
+            <div class="conseil">🍃 Boire par petites gorgées régulièrement.</div>
+            <div class="conseil">🚰 Privilégier l'eau du robinet filtrée plutôt que les bouteilles plastiques.</div>
+            <div class="conseil">♻️ Utiliser une gourde réutilisable (inox ou verre).</div>
+            <div class="conseil">💧 Ne pas gaspiller l'eau, consommer la quantité adaptée à vos besoins.</div>
+          </div>
+        </article>
+      </div>
+
+    <footer>
+      ⚔ 2025 - Remi - Comment bien s’hydrater
+    </footer>
+  </main>
+</body>
+</html>
